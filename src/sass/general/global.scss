@@ -1,0 +1,116 @@
+html {
+  text-rendering: optimizeLegibility;
+  text-size-adjust: none;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $color-black;
+  font-size: 16px;
+  line-height: 25px;
+  font-family: "RFDewi",Arial,sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+
+  font-size: size-desktop($font-base);
+
+  @include mobile {
+    font-size: size-mobile($font-base);
+  }
+}
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  // font: inherit;
+  font-size: 100%;
+  vertical-align: baseline
+}
+
+html {
+  line-height: 1
+}
+
+ol,ul {
+  list-style: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+caption,th,td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle
+}
+
+q,blockquote {
+  quotes: none
+}
+
+q:before,q:after,blockquote:before,blockquote:after {
+  content: "";
+  content: none
+}
+
+a img {
+  border: none
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
+  display: block
+}
+
+@-ms-viewport {
+  width: device-width
+}
+
+body:after {
+  display: none;
+  content: "screen-xs-min"
+}
+
+@media screen and (min-width: 760px) {
+  body:after {
+    content:"screen-sm-min"
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body:after {
+    content:"screen-md-min"
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body:after {
+    content:"screen-lg-min"
+  }
+}
+
+*,*:before,*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "RFDewi",Arial,sans-serif;
+}
+
+html {
+
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto
+}
+
+
+

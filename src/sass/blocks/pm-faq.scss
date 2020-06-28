@@ -1,0 +1,110 @@
+.pm-faq-title {
+  margin-bottom: 24px;
+  text-align: center;
+  @media screen and (max-width: 759px) {
+    margin-bottom: 31px;
+  }
+}
+
+.pm-landing-faq-accordion {
+  margin-top: 57px;
+
+  @media screen and (max-width: 759px) {
+    margin-top: 7px;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    padding-top: 49px;
+    padding-bottom: 48px;
+    border-top: 1px solid #D8D8D8;
+    outline: none;
+    position: relative;
+    padding-right: 100px;
+
+    @media screen and (max-width: 759px) {
+      font-size: 16px;
+      line-height: 24px;
+      padding-top: 24px;
+      padding-bottom: 23px;
+      padding-right: 44px;
+    }
+
+    &:first-of-type {
+      border-top: none;
+    }
+
+    .ui-accordion-header-icon {
+     width: 35px;
+     height: 35px;
+     position: absolute;
+     display: block;
+     right: 0;
+     top: calc(50% - 17px);
+     transition: transform 0.5s;
+
+     @media screen and (max-width: 759px) {
+      width: 23px;
+      height: 23px;
+      top: calc(50% - 7px);
+     }
+
+     &::before {
+       content: "";
+       position: absolute;
+       height: 100%;
+       width: 100%;
+       background-image: url('../img/plus.svg');
+       background-size: 100%;
+       background-repeat: no-repeat;
+       top: -3px;
+       transition: opacity 0.5s;
+     }
+
+     &::after {
+      content: "";
+       position: absolute;
+       height: 100%;
+       width: 100%;
+       background-image: url('../img/plus-grey.svg');
+       background-size: 100%;
+       background-repeat: no-repeat;
+       top: -3px;
+       opacity: 0;
+       transition: opacity 0.5s;
+    }
+
+    }
+    .ui-icon-triangle-1-s {
+      transform: rotate(-45deg);
+      &::before {
+        opacity: 0;
+      }
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  div.ui-accordion-content {
+    font-size: 21px;
+    line-height: 160%;
+    color: #575757;
+    padding-right: 141px;
+    padding-bottom: 89px;
+
+    @media screen and (max-width: 759px) {
+      font-size: 14px;
+      line-height: 20px;
+      padding-right: 47px;
+      padding-top: 3px;
+      padding-bottom: 46px;
+    }
+
+    @media screen and (max-width: 400px) {
+      padding-right: 0;
+    }
+  }
+}

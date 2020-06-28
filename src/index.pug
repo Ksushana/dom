@@ -1,0 +1,294 @@
+doctype html
+html.service-landing-layout(lang='ru')
+  head
+    meta(charset='utf-8')
+    meta(content='width=device-width, initial-scale=1, user-scalable=no', name='viewport')
+    title Локалс - аренда жилой недвижимости в Москве
+    link( rel="stylesheet" href="css/style.min.css" )
+    link( rel="preload" href="fonts/RFDewi-Bold.woff2" as="font" type="font/woff2" crossorigin )
+    link( rel="preload" href="fonts/RFDewi-Regular.woff2" as="font" type="font/woff2" crossorigin )
+    link( rel="preload" href="fonts/RFDewi-Semibold.woff2" as="font" type="font/woff2" crossorigin )
+    link( rel="preload" href="fonts/RFDewi-Ultrabold.woff2" as="font" type="font/woff2" crossorigin )
+    link(href='https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap', rel='stylesheet')
+  body
+    main
+      section.pm-hero
+        .pm-landing-container
+          a.pm-hero-logo(aria-label='Locals', href='/', title='Locals')
+            img.pm-hero-logo__image(width='83', height='26', src='img/logo-dom.svg')
+          h2.pm-hero-title Самый легкий способ сдавать квартиру
+          p.pm-hero-notice Вы получаете деньги точно в срок. Все остальное мы берем на себя.
+          ul.pm-hero-advantages
+            li.pm-hero-advantages__item
+              .pm-hero-advantages__item-image-container
+                img.pm-hero-advantages__item-image-garanty(width='162', height='180', alt='Гарантия платежа', src='https://assets.thelocals.ru/assets/landing-property-managment/advantages/garanty-8e0ce79a9e9418f91466e63b6d42a71d26922de6b00a21ea74586a44b49906ff.svg')
+              p.pm-hero-advantages__item-text
+                strong Гарантия платежа.
+                |  Перечислим деньги вовремя, даже
+                |             если арендатор задерживает оплату.
+            li.pm-hero-advantages__item
+              .pm-hero-advantages__item-image-container
+                img.pm-hero-advantages__item-image-control(width='234', height='181', alt='Контроль в приложении', src='https://assets.thelocals.ru/assets/landing-property-managment/advantages/control-b68b277f34110b7592522947b4f8d3ac5632c430f3360e12f7d2b8cf6b9283eb.svg')
+              p.pm-hero-advantages__item-text
+                strong Контроль в приложении.
+                |  Больше не&nbsp;придется ездить проверять квартиру и&nbsp;беспокоить арендатора.
+            li.pm-hero-advantages__item
+              .pm-hero-advantages__item-image-container
+                img.pm-hero-advantages__item-image-freedom(width='185', height='183', alt='Cвобода от забот', src='https://assets.thelocals.ru/assets/landing-property-managment/advantages/freedom-5e3031ebcfa1ce9b01e70ec5b85fc65597336a26e0c84bf4e0f83875a46f9780.svg')
+              p.pm-hero-advantages__item-text
+                strong Cвобода от забот.
+                |  Решаем бытовые проблемы арендатора
+                |             без вашего участия.
+
+      section.pm-landing-section.pm-landing-section__money
+        .pm-landing-container.pm-landing-money-container
+          .pm-landing-half.pm-landing-money
+            .pm-landing-money__content
+              h2.pm-landing-section-title.pm-money-title Поможем быстрее сдать вашу квартиру и&nbsp;увеличить охват
+              .pm-landing-money__phone--mobile
+                picture
+                  source(srcset='img/phone-locals-mobile@1x.jpg 1x, img/phone-locals-mobile@2x.jpg 2x')
+                  img.img-responsive(src='img/phone-locals.png')
+              ul.pm-landing-check-advantages.pm-landing-money-advantages
+                li.pm-landing-check-advantages__item
+                  | Поднимем ваше объявление в каталоге квартир на сайте Локалс, чтобы его увидели одним из первых.
+                li.pm-landing-check-advantages__item
+                  | Разместим ваше объявление на всех популярных площадках.
+                  ul.pm-hero-companies
+                    li.pm-hero-companies__item
+                      .pm-hero-companies__item-logo
+                        img.img-responsive(width='52', height='52', alt='Locals', src='https://assets.thelocals.ru/assets/landing-property-managment/companies/circle-locals@2x-4b70e31345f4423d80fd8d191c4f10619377940255aefbeceafc1ad7a1788fd0.png')
+                      .pm-hero-companies__item-title Локалс
+                    li.pm-hero-companies__item
+                      .pm-hero-companies__item-logo
+                        img.img-responsive(width='52', height='52', alt='Яндекс', src='https://assets.thelocals.ru/assets/landing-property-managment/companies/circle-yandexN@2x-8dfae60c36c1f409ebcf50e1f3de43bd6126d1fcbcc8e276f1465e988ee7c77f.png')
+                      .pm-hero-companies__item-title Яндекс
+                    li.pm-hero-companies__item
+                      .pm-hero-companies__item-logo
+                        img.img-responsive(width='52', height='52', alt='Циан', src='https://assets.thelocals.ru/assets/landing-property-managment/companies/circle-cian@2x-ac5f0eb131248e36bb74cbe8c123d6e8d58cf23c6eb75d68cb975659f4959b23.png')
+                      .pm-hero-companies__item-title Циан
+                    li.pm-hero-companies__item
+                      .pm-hero-companies__item-logo
+                        img.img-responsive(width='52', height='52', alt='Авито', src='https://assets.thelocals.ru/assets/landing-property-managment/companies/circle-avito@2x-f01e8917f0961c42d3f2bdfa7ec7465a8ccb5c46b3a34ba811916eef1d01fc5a.png')
+                      .pm-hero-companies__item-title Авито
+                    li.pm-hero-companies__item
+                      .pm-hero-companies__item-logo
+                        img.img-responsive(width='52', height='52', alt='Юла', src='https://assets.thelocals.ru/assets/landing-property-managment/companies/circle-yula@2x-bc76689b1a64df73a974a875f6214233b583725847c62f6c20f03c03a98fef67.png')
+                      .pm-hero-companies__item-title Юла
+                li.pm-landing-check-advantages__item Разметим ваше объявление в наших соцесетях.
+                li.pm-landing-check-advantages__item Примем все звонки, проведен показы и&nbsp;проверим потенциальных жильцов.
+                li.pm-landing-check-advantages__item Поможем с сопровождением сделки: юристы&nbsp;проверят все документы.
+            .pm-landing-money__image
+              .pm-landing-money__phone
+                picture
+                  source(srcset='img/phone-locals.png')
+                  img.img-responsive(src='img/phone-locals.png')
+      section.pm-landing-section.pm-landing-section__control
+        .pm-landing-container.pm-landing-control-container
+          .pm-landing-half.pm-landing-control
+            .pm-landing-half__col.pm-landing-control__image
+              .pm-landing-control__phone
+                picture
+                  source(srcset='https://assets.thelocals.ru/assets/landing-property-managment/control-phone-d1864d22bbcb1c7c8861e5621d462c5a362cda47714d6e64b95b730ef6378754.png 1x, https://assets.thelocals.ru/assets/landing-property-managment/control-phone@2x-5e08b74d71f24937537586805e8f99293937c04661e0d0a30e901d7847e2560c.png 2x')
+                  img.img-responsive(src='https://assets.thelocals.ru/assets/landing-property-managment/control-phone-d1864d22bbcb1c7c8861e5621d462c5a362cda47714d6e64b95b730ef6378754.png')
+            .pm-landing-half__col.pm-landing-control__content
+              h2.pm-landing-section-title.pm-control-title Контроль квартиры в приложении
+              .pm-landing-control__phone--mobile
+                picture
+                  source(srcset='https://assets.thelocals.ru/assets/landing-property-managment/control-phone-mobile-234d1ad10c0a1b13aa9a43523142bc80cbc9ab21bd7cc25a1b0a09e8c6164534.png 1x, https://assets.thelocals.ru/assets/landing-property-managment/control-phone-mobile@2x-77a40498355f2ae7b5e9410185721f4732e82d23f59414db87d91fde263556c6.png 2x')
+                  img.img-responsive(src='https://assets.thelocals.ru/assets/landing-property-managment/control-phone-mobile-234d1ad10c0a1b13aa9a43523142bc80cbc9ab21bd7cc25a1b0a09e8c6164534.png')
+              ul.pm-landing-check-advantages.pm-landing-control-advantages
+                li.pm-landing-check-advantages__item
+                  | Вам больше не придется ездить проверять квартиру и беспокоить
+                  | арендатора.
+                li.pm-landing-check-advantages__item
+                  | Спустя месяц после заселения жильцов мы сами съездим и
+                  | удостоверимся, что&nbsp;все&nbsp;в&nbsp;порядке.
+                li.pm-landing-check-advantages__item
+                  | Дальше вы будете получать фото- и видеоотчет прямо в нашем
+                  | приложении. Удобно и быстро!
+              .pm-landing-control__arrow-pointer Фото нельзя будет подделать
+      section.pm-landing-section.pm-landing-section__insurance
+        .pm-landing-container.pm-landing-insurance-container
+          .pm-landing-insurance
+            h2.pm-landing-section-title.pm-insurance-title Страховка квартиры на 750 000 ₽
+            p.pm-landing-section-subtitle.pm-insurance-subtitle
+              | Эксклюзивный страховой продукт
+              a.pm-landing-mango(href='https://mango.rocks/', rel='noopener', target='_blank')
+                img.pm-landing-mango__image(width='80', height='48', alt='Mango', src='https://assets.thelocals.ru/assets/landing-property-managment/insurance/mango-a82aed8ab28e3402271ac1b4a8844cd86cfbfc596aba94aba061c603d2e94cb6.svg')
+              |           для Локалс. Домашние животные, маленькие дети и неаккуратность арендатора больше не&nbsp;проблема.
+            ul.pm-landing-insurance-list
+              li.pm-landing-insurance-list__item
+                .pm-landing-insurance-list__item-icon
+                  img.pm-landing-insurance-list__item-icon__image(width='64', height='64', alt='Затопление', src='https://assets.thelocals.ru/assets/landing-property-managment/insurance/inundation-f325ef41de6001bc0818b164ff6c3e544a411ef8b76ff3ff7aa8f4aff8f9b083.svg')
+                p.pm-landing-insurance-list__item-title Затопление
+              li.pm-landing-insurance-list__item
+                .pm-landing-insurance-list__item-icon
+                  img.pm-landing-insurance-list__item-icon__image(width='64', height='64', alt='Пожар или взрыв', src='https://assets.thelocals.ru/assets/landing-property-managment/insurance/fire-d54b891b07cd6176de39e5bf928384dbe237c9e6cbde1984ef1482fb6b7f3796.svg')
+                p.pm-landing-insurance-list__item-title Пожар или взрыв
+                p.pm-landing-insurance-list__item-title.pm-landing-insurance-list__item-title--mobile
+                  | Пожар или
+                  | затопление
+              li.pm-landing-insurance-list__item
+                .pm-landing-insurance-list__item-icon
+                  img.pm-landing-insurance-list__item-icon__image(width='64', height='64', alt='Стихийные бедствия', src='https://assets.thelocals.ru/assets/landing-property-managment/insurance/disasters-6aecaebec9fad2101d0906861fa9da661351bb633d971419c13df0dcf467e1c1.svg')
+                p.pm-landing-insurance-list__item-title Стихийные бедствия
+              li.pm-landing-insurance-list__item
+                .pm-landing-insurance-list__item-icon
+                  img.pm-landing-insurance-list__item-icon__image(width='64', height='64', alt='Ущерб, нанесенный арендатором', src='https://assets.thelocals.ru/assets/landing-property-managment/insurance/damage-5a3ca21516ef47ce380719d6b0d350acff891fb58ef1adad6dcdc9d4ec580d2d.svg')
+                p.pm-landing-insurance-list__item-title Ущерб, нанесенный арендатором
+              li.pm-landing-insurance-list__item
+                .pm-landing-insurance-list__item-icon
+                  img.pm-landing-insurance-list__item-icon__image(width='64', height='64', alt='Пропажа имущества', src='https://assets.thelocals.ru/assets/landing-property-managment/insurance/missing-3cb325801d3244c5d16cb27aa8118e7c6220c504cb6baec6a476b2fa025f77fa.svg')
+                p.pm-landing-insurance-list__item-title Пропажа имущества
+      section.pm-landing-section.pm-landing-section__legal
+        .pm-landing-container.pm-landing-legal-container
+          .pm-landing-legal
+            h2.pm-landing-section-title.pm-legal-title Легальный доход
+            p.pm-landing-section-subtitle.pm-legal-subtitle
+              | По вашему желанию мы оформим вас в качестве
+              | самозанятого и&nbsp;будем автоматически платить налог.
+            .pm-landing-legal-percent
+              .pm-landing-legal-percent__col 4
+              .pm-landing-legal-percent__col %
+            p.pm-landing-legal-percent__notice Налоговая ставка
+            ul.pm-landing-check-advantages.pm-landing-legal-advantages
+              li.pm-landing-check-advantages__item
+                | Налоговая ставка 4% (3%&nbsp;&mdash;&nbsp;в&nbsp;первые&nbsp;2&nbsp;года) закреплена на 10 лет.
+              li.pm-landing-check-advantages__item
+                | Для оформления нужен только скан паспорта. Приезжать никуда
+                | не нужно.
+              li.pm-landing-check-advantages__item
+                | Отказаться от статуса самозанятого и уплаты налога можно в
+                | любой момент.
+      section.pm-landing-section.pm-landing-section__assistant
+        .pm-landing-container.pm-landing-assistant-container
+          .pm-landing-half.pm-landing-assistant
+            .pm-landing-half__col.pm-landing-assistant__content
+              h2.pm-landing-section-title.pm-assistant-title Личный менеджер вашей квартиры
+              .pm-landing-assistant__phone--mobile
+                picture
+                  source(srcset='img/pm-landing-assistant-mobile@1x.png 1x, img/pm-landing-assistant-mobile@2x.png 2x')
+                  img.img-responsive(src='img/pm-landing-assistant-mobile@2x.png')
+              ul.pm-landing-check-advantages.pm-landing-assistant-advantages
+                li.pm-landing-check-advantages__item Без вашего участия решает бытовые проблемы в квартире.
+                li.pm-landing-check-advantages__item Вызовет проверенного мастера, если что-то сломалось.
+                li.pm-landing-check-advantages__item
+                  | Напомнит арендатору, что пора передать показания счетчиков или
+                  | платить за жилье.
+              .pm-landing-assistant__arrow-pointer Общаемся с арендатором в приложении
+            .pm-landing-half__col.pm-landing-assistant__image
+              .pm-landing-assistant__phone
+                picture
+                  source(srcset='img/pm-landing-assistant@1x.jpg 1x, img/pm-landing-assistant@2x.jpg 2x')
+                  img.img-responsive(src='img/pm-landing-assistant@2x.jpg')
+      section.pm-landing-section.pm-landing-section__tariffs
+        .pm-landing-container.pm-landing-tariffs-container
+          .pm-landing-tariffs
+            h2.pm-landing-section-title.pm-tariffs-title Стоимость
+
+          .pm-landing-half.pm-landing-tariffs-half
+            .pm-landing-half__col.pm-landing-tariffs__month
+              p.pm-landing-tariffs__price 980<span>₽</span>
+              p.pm-landing-tariffs__permonth в месяц
+            .pm-landing-half__col.pm-landing-tariffs__content
+              ul.pm-landing-check-advantages.pm-landing-tariffs-advantages
+                li.pm-landing-check-advantages__item.pm-landing-check-tariffs__item
+                  b Свобода от забот
+                  p Личный менеджер решает бытовые проблемы в квартире без вашего участия.
+                li.pm-landing-check-advantages__item.pm-landing-check-tariffs__item
+                  b Бесплатный поиск арендаторов
+                  p Если жильцы уехали, поможем найти новых.
+                li.pm-landing-check-advantages__item.pm-landing-check-tariffs__item
+                  b Страховка
+                  p Имущество застраховано на 750 000 ₽
+                li.pm-landing-check-advantages__item.pm-landing-check-tariffs__item
+                  b Контроль в приложении
+                  p Личный выезд, ежеквартальный фото- и видеоотчет о состоянии квартиры.
+                li.pm-landing-check-advantages__item.pm-landing-check-tariffs__item
+                  b По желанию: легальный доход
+                  p Регистрируем самозанятость и платим 4% налог в ФНС автоматически.
+
+
+      section.pm-landing-section.pm-landing-section__order
+        .pm-landing-container.pm-landing-order-container
+          .pm-landing-order
+            h2.pm-landing-section-title.pm-order-title Оставьте заявку
+            p.pm-landing-section-subtitle.pm-order-subtitle Мы позвоним и расскажем, как работает услуга.
+            form.pm-order-form
+              .pm-order-form__row
+                input#phone.pm-order-form__input(name='phone', type='text', placeholder="+7")
+                button.pm-submit.pm-order-form__submit(type='button')
+                  span.pm-submit__text Оставить заявку
+                  span.pm-submit__spinner
+                    span.bounce1
+                    span.bounce2
+                    span.bounce3
+              .pm-order-form__notice
+                | Нажимая кнопку «Оставить заявку», вы соглашаетесь с
+                a.pm-order-form__rules(href='/pages/agreement') правилами сервиса.
+
+      section.pm-landing-section.pm-landing-section__faq
+        .pm-landing-container.pm-landing-faq-container
+          h2.pm-landing-section-title.pm-faq-title Частые вопросы
+          .pm-landing-faq-accordion( id="accordion" )
+            h3 Я не хочу регистрироваться как самозанятый. Можно этого не делать?
+            div Можно. Цена подписки от этого не изменится, ведь мы не зарабатываем на этой услуге. В любом случае, ваши данные мы никуда не передаем. Но все же мы рекомендуем легализоваться, т.к. последние пару лет государство стало более пристально следить за рынком аренды. Налоговая ставка для тех, кто сдает квартиры физическим лицам самая низкая — всего 4%. Просто заложите их в стоимость аренды и живите спокойно. Если захотите, можете позже зарегистрироваться самостоятельно.
+            h3 А если я уже плачу налоги сам?
+            div Вы можете продолжить платить самостоятельно или использовать наш сервис. Он автоматизирует оплату налога, чтобы вам не нужно было об этом помнить.
+            h3 Могу ли я искать жильцов самостоятельно? Хочу увидеть потенциального арендатора и поговорить с ним до подписания договора.
+            div Конечно, можете. Но поиск отнимает много времени и сил. И у вас вряд ли получится проверить благонадежность каждого арендатора так же тщательно, как это делаем мы с помощью подробной анкеты. Личную встречу и знакомство с уже проверенным претендентом мы вам при необходимости организуем.
+            h3 Как вы проверяете арендатора?
+            div Мы используем ту же систему, которую используют банки при проверке заемщиков. По паспортным данным выясняем благонадежность арендатора, закредитованность, отсутствие проблем с законом и другие важные факты биографии.
+            h3 А если у меня уже есть страховка?
+            div Возможно, она отличается от нашей. Совместно с «Альфа-страхованием» мы разработали специальную страховку недвижимости, которая срабатывает, даже если в квартире живет арендатор. В других страховках случай признают страховым, только если в квартире живет собственник. Другой важный плюс нашей страховки — упрощенный процесс оценки повреждений по фото и страховые выплаты на карту. То есть никакой беготни со сбором справок и долгого ожидания.
+            h3 Что за мастера, которых вы вызываете?
+            div У нас есть база проверенных профессиональных мастеров, с которыми мы давно и плотно сотрудничаем. Они предлагают разумные цены и дают гарантию на свою работу.
+            h3  Сейчас как-то нет необходимости, вот найду жильцов, тогда.
+            div Очень важно чтобы квартира в первую неделю размещения получила максимальный охват, так как потом количество просмотров будет снижаться, поэтому мы рекомендуем именно сейчас уже подключить тариф.
+            h3 Я пенсионер и боюсь потерять льготы, если зарегистрируюсь в качестве самозанятого.
+            div Не волнуйтесь! ФНС признала самозанятых пенсионеров неработающими, поэтому все льготы и прибавки к пенсии у вас сохранятся.
+    footer.footer
+      a.footer__logo(href="#")
+        img.pm-hero-logo__image(width='73', height='23', src='img/logo-dom-white.svg')
+      ul.footer__list
+        li
+          a(href="mailto:hello@domoupravlen.ie") hello@domoupravlen.ie
+        li
+          a(href="#") Публичная оферта
+        li
+          a(href="#") Политика обработки данных
+
+
+    script(src='js/script.min.js')
+    script.
+      document.documentElement.classList.add('property-managment');
+      document.addEventListener('DOMContentLoaded', function () {
+      if (
+      document.readyState === 'interactive' ||
+      document.readyState === 'complete'
+      ) {
+      var phoneInput = document.getElementById('phone');
+      var submitButton = document.querySelector('.pm-order-form__submit');
+      if (submitButton && phoneInput) {
+      submitButton.addEventListener('click', function (event) {
+      // TODO:
+      });
+      function handlePhoneInputChange(event) {
+      var value = phoneInput.value;
+      if (value.length > 0 && value.indexOf('_') === -1) {
+      if (submitButton.hasAttribute('disabled')) {
+      submitButton.removeAttribute('disabled');
+      }
+      } else {
+      if (!submitButton.hasAttribute('disabled')) {
+      submitButton.setAttribute('disabled', 'disabled');
+      }
+      }
+      }
+      phoneInput.addEventListener('keyup', handlePhoneInputChange);
+      handlePhoneInputChange();
+      }
+
+      }
+      });
