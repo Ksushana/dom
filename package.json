@@ -1,8 +1,8 @@
 {
-  "name": "9sense",
+  "name": "dom",
   "version": "1.0.0",
   "private": true,
-  "description": "9sense",
+  "description": "Dom",
   "devDependencies": {
     "autoprefixer": "^9.6.0",
     "browser-sync": "^2.26.7",
