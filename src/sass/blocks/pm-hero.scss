@@ -15,7 +15,7 @@
 }
 
 .pm-hero {
-  padding-top: 84px;
+  padding-top: 120px;
   padding-bottom: 55px;
 }
 
@@ -41,6 +41,7 @@
 }
 
 .pm-hero-logo__image {
+  width: 154px;
 }
 
 @media screen and (max-width: 759px) {
@@ -62,18 +63,19 @@
   margin-bottom: 41px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 129px;
+  margin-top: 72px;
   font-weight: 600;
     font-size: 80px;
     line-height: 80px;
   text-align: center;
+  letter-spacing: -0.02em;
 }
 
 @media screen and (max-width: 759px) {
   .pm-hero-title {
-    margin-bottom: 33px;
-    font-size: 40px;
-    line-height: 120%;
+    margin-bottom: 23px;
+    font-size: 46px;
+    line-height: 51px;
     margin-top: 9px;
   }
 }
@@ -90,7 +92,7 @@
 
 @media screen and (max-width: 759px) {
   .pm-hero-notice {
-    margin-bottom:52px;
+    margin-bottom:53px;
     font-size: 16px;
     line-height: 150%;
     max-width: 305px;
@@ -197,7 +199,7 @@
 @media screen and (max-width: 759px) {
   .pm-hero-advantages__item-text {
     min-height:auto;
-    max-width: 310px
+    max-width: 306px;
   }
 }
 

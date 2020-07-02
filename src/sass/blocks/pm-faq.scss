@@ -7,7 +7,7 @@
 }
 
 .pm-landing-faq-accordion {
-  margin-top: 57px;
+  margin-top: 43px;
 
   @media screen and (max-width: 759px) {
     margin-top: 7px;
@@ -17,12 +17,12 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
-    padding-top: 49px;
+    padding-top: 48px;
     padding-bottom: 48px;
     border-top: 1px solid #D8D8D8;
     outline: none;
     position: relative;
-    padding-right: 100px;
+    padding-right: 120px;
 
     @media screen and (max-width: 759px) {
       font-size: 16px;
@@ -43,7 +43,12 @@
      display: block;
      right: 0;
      top: calc(50% - 17px);
-     transition: transform 0.5s;
+     transition: all 0.3s;
+     cursor: pointer;
+
+     &:hover {
+       opacity: 0.65;
+     }
 
      @media screen and (max-width: 759px) {
       width: 23px;
@@ -92,7 +97,7 @@
     font-size: 21px;
     line-height: 160%;
     color: #575757;
-    padding-right: 141px;
+    padding-right: 145px;
     padding-bottom: 89px;
 
     @media screen and (max-width: 759px) {

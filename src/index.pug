@@ -15,7 +15,7 @@ html.service-landing-layout(lang='ru')
       section.pm-hero
         .pm-landing-container
           a.pm-hero-logo(aria-label='Locals', href='/', title='Locals')
-            img.pm-hero-logo__image(width='83', height='26', src='img/logo-dom.svg')
+            img.pm-hero-logo__image(width='154', height='48', src='img/logo-dom.svg')
           h2.pm-hero-title Самый легкий способ сдавать квартиру
           p.pm-hero-notice Вы получаете деньги точно в срок. Все остальное мы берем на себя.
           ul.pm-hero-advantages
@@ -47,8 +47,8 @@ html.service-landing-layout(lang='ru')
               h2.pm-landing-section-title.pm-money-title Поможем быстрее сдать вашу квартиру и&nbsp;увеличить охват
               .pm-landing-money__phone--mobile
                 picture
-                  source(srcset='img/phone-locals-mobile@1x.jpg 1x, img/phone-locals-mobile@2x.jpg 2x')
-                  img.img-responsive(src='img/phone-locals.png')
+                  source(srcset='img/phone-locals-mobile@1x.png 1x, img/phone-locals-mobile@2x.png 2x')
+                  img.img-responsive(src='img/phone-locals@1x.png' srcset='img/phone-locals@2x.png 2x')
               ul.pm-landing-check-advantages.pm-landing-money-advantages
                 li.pm-landing-check-advantages__item
                   | Поднимем ваше объявление в каталоге квартир на сайте Локалс, чтобы его увидели одним из первых.
@@ -80,22 +80,23 @@ html.service-landing-layout(lang='ru')
             .pm-landing-money__image
               .pm-landing-money__phone
                 picture
-                  source(srcset='img/phone-locals.png')
-                  img.img-responsive(src='img/phone-locals.png')
+                  source(srcset='img/phone-locals@2x.png 2x')
+                  img.img-responsive(src='img/phone-locals@1x.png')
       section.pm-landing-section.pm-landing-section__control
         .pm-landing-container.pm-landing-control-container
           .pm-landing-half.pm-landing-control
             .pm-landing-half__col.pm-landing-control__image
               .pm-landing-control__phone
                 picture
-                  source(srcset='https://assets.thelocals.ru/assets/landing-property-managment/control-phone-d1864d22bbcb1c7c8861e5621d462c5a362cda47714d6e64b95b730ef6378754.png 1x, https://assets.thelocals.ru/assets/landing-property-managment/control-phone@2x-5e08b74d71f24937537586805e8f99293937c04661e0d0a30e901d7847e2560c.png 2x')
-                  img.img-responsive(src='https://assets.thelocals.ru/assets/landing-property-managment/control-phone-d1864d22bbcb1c7c8861e5621d462c5a362cda47714d6e64b95b730ef6378754.png')
+                  source(srcset='img/control-phone@1x.png 1x, img/control-phone@2x.png 2x')
+                  img.img-responsive(src='img/control-phone@1x.png')
             .pm-landing-half__col.pm-landing-control__content
               h2.pm-landing-section-title.pm-control-title Контроль квартиры в приложении
               .pm-landing-control__phone--mobile
                 picture
-                  source(srcset='https://assets.thelocals.ru/assets/landing-property-managment/control-phone-mobile-234d1ad10c0a1b13aa9a43523142bc80cbc9ab21bd7cc25a1b0a09e8c6164534.png 1x, https://assets.thelocals.ru/assets/landing-property-managment/control-phone-mobile@2x-77a40498355f2ae7b5e9410185721f4732e82d23f59414db87d91fde263556c6.png 2x')
-                  img.img-responsive(src='https://assets.thelocals.ru/assets/landing-property-managment/control-phone-mobile-234d1ad10c0a1b13aa9a43523142bc80cbc9ab21bd7cc25a1b0a09e8c6164534.png')
+                    source(srcset='img/control-phone-mobile@1x.png 1x, img/control-phone-mobile@2x.png 2x')
+                    img.img-responsive(src='img/control-phone@1x.png')
+
               ul.pm-landing-check-advantages.pm-landing-control-advantages
                 li.pm-landing-check-advantages__item
                   | Вам больше не придется ездить проверять квартиру и беспокоить
@@ -179,8 +180,8 @@ html.service-landing-layout(lang='ru')
             .pm-landing-half__col.pm-landing-assistant__image
               .pm-landing-assistant__phone
                 picture
-                  source(srcset='img/pm-landing-assistant@1x.jpg 1x, img/pm-landing-assistant@2x.jpg 2x')
-                  img.img-responsive(src='img/pm-landing-assistant@2x.jpg')
+                  source(srcset='img/pm-landing-assistant@1x.png 1x, img/pm-landing-assistant@2x.png 2x')
+                  img.img-responsive(src='img/pm-landing-assistant@2x.png')
       section.pm-landing-section.pm-landing-section__tariffs
         .pm-landing-container.pm-landing-tariffs-container
           .pm-landing-tariffs
@@ -224,7 +225,7 @@ html.service-landing-layout(lang='ru')
                     span.bounce2
                     span.bounce3
               .pm-order-form__notice
-                | Нажимая кнопку «Оставить заявку», вы соглашаетесь с
+                | Нажимая кнопку «Оставить заявку», вы соглашаетесь с&nbsp;
                 a.pm-order-form__rules(href='/pages/agreement') правилами сервиса.
 
       section.pm-landing-section.pm-landing-section__faq
