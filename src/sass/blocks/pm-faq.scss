@@ -19,7 +19,7 @@
     line-height: 32px;
     padding-top: 48px;
     padding-bottom: 48px;
-    border-top: 1px solid #D8D8D8;
+    border-top: 1px solid #d8d8d8;
     outline: none;
     position: relative;
     padding-right: 120px;
@@ -37,50 +37,49 @@
     }
 
     .ui-accordion-header-icon {
-     width: 35px;
-     height: 35px;
-     position: absolute;
-     display: block;
-     right: 0;
-     top: calc(50% - 17px);
-     transition: all 0.3s;
-     cursor: pointer;
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      display: block;
+      right: 0;
+      top: calc(50% - 17px);
+      transition: all 0.3s;
+      cursor: pointer;
 
-     &:hover {
-       opacity: 0.65;
-     }
+      &:hover {
+        opacity: 0.65;
+      }
 
-     @media screen and (max-width: 759px) {
-      width: 23px;
-      height: 23px;
-      top: calc(50% - 7px);
-     }
+      @media screen and (max-width: 759px) {
+        width: 23px;
+        height: 23px;
+        top: calc(50% - 7px);
+      }
 
-     &::before {
-       content: "";
-       position: absolute;
-       height: 100%;
-       width: 100%;
-       background-image: url('../img/plus.svg');
-       background-size: 100%;
-       background-repeat: no-repeat;
-       top: -3px;
-       transition: opacity 0.5s;
-     }
+      &::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-image: url('../img/plus.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        top: -3px;
+        transition: opacity 0.5s;
+      }
 
-     &::after {
-      content: "";
-       position: absolute;
-       height: 100%;
-       width: 100%;
-       background-image: url('../img/plus-grey.svg');
-       background-size: 100%;
-       background-repeat: no-repeat;
-       top: -3px;
-       opacity: 0;
-       transition: opacity 0.5s;
-    }
-
+      &::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-image: url('../img/plus-grey.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        top: -3px;
+        opacity: 0;
+        transition: opacity 0.5s;
+      }
     }
     .ui-icon-triangle-1-s {
       transform: rotate(-45deg);
@@ -95,7 +94,7 @@
 
   div.ui-accordion-content {
     font-size: 21px;
-    line-height: 160%;
+    line-height: 163%;
     color: #575757;
     padding-right: 145px;
     padding-bottom: 89px;

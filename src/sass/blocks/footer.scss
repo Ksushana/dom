@@ -1,109 +1,25 @@
 .footer {
   padding: 80px 11.11%;
-  background-color: $color-black;
   display: flex;
-  margin-top: 177px;
-  align-items: center;
-
-  .pm-hero-logo__image {
-    width: 76px;
-  }
+  margin-top: 224px;
 
   @media screen and (max-width: 759px) {
-   flex-direction: column;
-   padding: 49px 11.11% 67px;
-  }
-
-
-}
-
-.footer__list {
-  display: flex;
-  padding-left: 0;
-  @include list-reset;
-
-  li {
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    &:nth-of-type(2) {
-      opacity: 0.75;
-      text-decoration: underline;
-
-    }
-
-    &:nth-of-type(3) {
-      opacity: 0.75;
-      text-decoration: underline;
-    }
-
-  }
-
-  @media screen and (max-width: 1070px) {
     flex-direction: column;
-  }
-
-  @media screen and (max-width: 759px) {
-    text-align: center;
-    padding-top: 10px;
-
-    li {
-
-      &:nth-of-type(2) {
-        order: 3;
-
-        a {
-          font-size: 14px;
-          line-height: 22px;
-        }
-
-      }
-
-      &:nth-of-type(3) {
-        order: 2;
-        a {
-          font-size: 14px;
-          line-height: 22px;
-        }
-
-      }
-
-      &:nth-of-type(1) {
-        order: 1;
-      }
-    }
+    padding: 49px 15px 67px;
+    margin-top: 150px;
   }
 
   a {
-    text-decoration: none;
-    color: $color-white;
-    margin-right: 57px;
-    transition: opacity 0.5s;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #000000;
+    opacity: 0.75;
 
     @media screen and (max-width: 759px) {
-      margin-right: 0 !important;
       font-size: 16px;
-      line-height: 20px;
-
-
-    }
-
-    &:hover {
-      opacity: 0.6;
+      line-height: 24px;
     }
   }
 }
-
-.footer__logo {
-  margin-right: 57px;
-  transition: opacity 0.5s;
-
-  @media screen and (max-width: 759px) {
-    margin-right: 0;
-   }
-
-  &:hover {
-    opacity: 0.6;
-  }
-}
-
