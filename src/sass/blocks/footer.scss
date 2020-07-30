@@ -1,7 +1,11 @@
 .footer {
-  padding: 80px 11.11%;
+  max-width: 1201px;
+  padding-right: 40px;
+  padding-left: 40px;
   display: flex;
   margin-top: 224px;
+  margin-right: auto;
+  margin-left: auto;
 
   @media screen and (max-width: 759px) {
     flex-direction: column;
