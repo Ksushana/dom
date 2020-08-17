@@ -449,7 +449,7 @@
 
 @media screen and (max-width: 759px) {
   .pm-landing-section__insurance {
-    padding-bottom: 75px;
+    padding-bottom: 35px;
   }
 }
 
@@ -477,15 +477,19 @@
   }
 }
 
-.pm-landing-insurance-list {
+.pm-landing-insurance-list .swiper-wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: flex-start;
 
-  @media screen and (max-width: 400px) {
-    flex-wrap: wrap;
+  @media screen and (max-width: 759px) {
+    flex-direction: unset;
+    flex-wrap: unset;
+    justify-content: flex-start;
+    align-items: unset;
+    padding-bottom: 40px;
   }
 }
 
@@ -493,58 +497,59 @@
   flex-basis: 160px;
   width: 160px;
   margin-right: 32px;
+  flex-shrink: 1;
+
+  @media screen and (max-width: 759px) {
+    flex-shrink: 0;
+    flex-basis: auto;
+    width: auto;
+  }
 }
 
 .pm-landing-insurance-list__item:last-child {
   margin-right: 0;
 }
 
-.pm-landing-insurance-list__item
-  .pm-landing-insurance-list__item-title--mobile {
-  display: none;
-}
-
 @media screen and (max-width: 759px) {
+  .swiper-pagination-bullet-active {
+    background: #296ecb;
+  }
   .pm-landing-insurance-list__item {
-    width: 25%;
+    // width: 25%;
     margin-right: 7vw;
   }
 
-  .pm-landing-insurance-list__item:first-child {
-    display: none;
-  }
+  // .pm-landing-insurance-list__item:nth-child(2)
+  //   .pm-landing-insurance-list__item-title {
+  //   // display: none;
+  //   order: 3;
+  // }
 
-  .pm-landing-insurance-list__item:nth-child(2)
-    .pm-landing-insurance-list__item-title {
-    display: none;
-    order: 3;
-  }
+  // .pm-landing-insurance-list__item:nth-child(2)
+  //   .pm-landing-insurance-list__item-title--mobile {
+  //   display: block;
+  // }
 
-  .pm-landing-insurance-list__item:nth-child(2)
-    .pm-landing-insurance-list__item-title--mobile {
-    display: block;
-  }
+  // .pm-landing-insurance-list__item:nth-child(3) {
+  //   order: 1;
+  // }
 
-  .pm-landing-insurance-list__item:nth-child(3) {
-    order: 1;
-  }
+  // .pm-landing-insurance-list__item:nth-child(2) {
+  //   order: 2;
+  // }
 
-  .pm-landing-insurance-list__item:nth-child(2) {
-    order: 2;
-  }
+  // .pm-landing-insurance-list__item:nth-child(4) {
+  //   order: 3;
+  // }
 
-  .pm-landing-insurance-list__item:nth-child(4) {
-    order: 3;
-  }
-
-  .pm-landing-insurance-list__item:nth-child(5) {
-    order: 4;
-  }
+  // .pm-landing-insurance-list__item:nth-child(5) {
+  //   order: 4;
+  // }
 }
 
 @media screen and (max-width: 400px) {
   .pm-landing-insurance-list__item {
-    flex-basis: 100px;
+    // flex-basis: 100px;
     margin-bottom: 30px;
   }
 }
