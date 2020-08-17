@@ -32,23 +32,22 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 26px;
-  padding-left: 68px;
+  padding-right: 17px;
 }
 
 @media screen and (max-width: 759px) {
   .pm-hero-logo {
     margin-bottom: 33px;
-    padding-left: 47px;
   }
 }
 
 .pm-hero-logo__image {
-  width: 230px;
+  width: 140px;
 }
 
 @media screen and (max-width: 759px) {
   .pm-hero-logo__image {
-    width: 153px;
+    width: 103px;
     height: auto;
   }
 }
@@ -206,6 +205,9 @@
 
 .pm-hero-advantages__item-text > strong {
   font-weight: bold;
+  display: block;
+
+  padding-bottom: 8px;
 }
 
 @media screen and (max-width: 759px) {
@@ -217,9 +219,8 @@
   }
 
   .pm-hero-advantages__item-text > strong {
-    display: block;
-    font-size: 18px;
     padding-bottom: 8px;
+    font-size: 18px;
   }
 }
 
